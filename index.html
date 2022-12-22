@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+  />
+  
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Busca CEP</title>
+</head>
+<body>
+  <header class="nav-container">
+    <nav class="nav-bar">
+      <h1>Busca CEP</h1>
+      <a target="_blank" 
+      href="https://www.linkedin.com/in/vitorriboli/">contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form-section" class="form-container">
+      <div class="card-form">
+        <form action="" name="newAddress">
+
+          <div class="form-control">
+            <label for="cep"></label>
+            <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP">
+            <div class="error-message" data-error="cep" ></div>
+          </div>
+          
+          <div class="form-control">
+            <label for="street">Logradouro</label>
+            <input name="street" id="street" class="form-input" 
+            type="text" placeholder="Logradouro" disabled>
+          </div>
+
+          <div class="form-control">
+            <label for="number">Número</label>
+            <input name="number" id="number" class="form-input" type="text" placeholder="Número">
+            <div class="error-message" data-error="number" ></div>
+          </div>
+
+          <div class="form-control">
+            <label for="city">Cidade</label>
+            <input name="city" id="city" class="form-input" 
+            type="text" placeholder="Cidade" disabled>
+          </div>
+
+          <div class="btn-container">
+            <button name="btnSave" class="btn btn-left" type="submit" >Salvar</button>
+            <button name="btnClear" class="btn btn-rigth" >Limpar</button>
+          </div>
+
+        </form>
+      </div>
+
+    </section> <!-- Formulário -->
+
+    <section id="list-section" class="list-container">
+
+    </section> <!-- Listagem -->
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <script type="module" src="js/viacep.js"></script>
+</body>
+</html>
