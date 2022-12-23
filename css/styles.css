@@ -50,7 +50,8 @@ main {
 .nav-bar a {
   text-decoration: none;
   color: var(--font-primary);
-  font-size: 18px
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .form-container {
@@ -112,6 +113,7 @@ main {
   color: var(--font-primary);
   font-weight: 700;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .btn-left {
